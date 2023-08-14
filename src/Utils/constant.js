@@ -11,23 +11,47 @@ import { RiLightbulbLine, RiFeedbackLine } from "react-icons/ri";
 import { FiSettings, FiHelpCircle } from "react-icons/fi";
 
 export const categories = [
-  { name: "New", icon: <AiFillHome />, type: "home" },
-  { name: "Trending", icon: <MdLocalFireDepartment />, type: "category" },
-  { name: "Music", icon: <CgMusicNote />, type: "category" },
-  { name: "Films", icon: <FiFilm />, type: "category" },
-  { name: "Live", icon: <MdLiveTv />, type: "category" },
-  { name: "Gaming", icon: <IoGameControllerSharp />, type: "category" },
-  { name: "News", icon: <ImNewspaper />, type: "category" },
-  { name: "Sports", icon: <GiDiamondTrophy />, type: "category" },
-  { name: "Learning", icon: <RiLightbulbLine />, type: "category" },
+  { name: "New", icon: React.createElement(AiFillHome), type: "home" },
+  {
+    name: "Trending",
+    icon: React.createElement(MdLocalFireDepartment),
+    type: "category",
+  },
+  { name: "Music", icon: React.createElement(CgMusicNote), type: "category" },
+  { name: "Films", icon: React.createElement(FiFilm), type: "category" },
+  { name: "Live", icon: React.createElement(MdLiveTv), type: "category" },
+  {
+    name: "Gaming",
+    icon: React.createElement(IoGameControllerSharp),
+    type: "category",
+  },
+  { name: "News", icon: React.createElement(ImNewspaper), type: "category" },
+  {
+    name: "Sports",
+    icon: React.createElement(GiDiamondTrophy),
+    type: "category",
+  },
+  {
+    name: "Learning",
+    icon: React.createElement(RiLightbulbLine),
+    type: "category",
+  },
   {
     name: "Fashion & beauty",
-    icon: <GiEclipse />,
+    icon: React.createElement(GiEclipse),
     type: "category",
     divider: true,
   },
-  { name: "Settings", icon: <FiSettings />, type: "menu" },
-  { name: "Report History", icon: <AiOutlineFlag />, type: "menu" },
-  { name: "Help", icon: <FiHelpCircle />, type: "menu" },
-  { name: "Send feedback", icon: <RiFeedbackLine />, type: "menu" },
+  { name: "Settings", icon: React.createElement(FiSettings), type: "menu" },
+  {
+    name: "Report History",
+    icon: React.createElement(AiOutlineFlag),
+    type: "menu",
+  },
+  { name: "Help", icon: React.createElement(FiHelpCircle), type: "menu" },
+  {
+    name: "Send feedback",
+    icon: React.createElement(RiFeedbackLine),
+    type: "menu",
+  },
 ];
