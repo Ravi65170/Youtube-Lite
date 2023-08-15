@@ -19,7 +19,9 @@ const Feed = () => {
             Array.isArray(searchResults) && // Check if searchResults is an array
             searchResults.map((item) => {
               if (item.type !== "video" || !item.video) return null; // Return null instead of false
-              return <VideoCard key={item.video.videoId} video={item.video} />;
+              return (
+                <VideoCard key={item?.video?.videoId} video={item?.video} />
+              );
             })}
         </div>
       </div>
